@@ -1,13 +1,13 @@
 const path = require("path");
 const pathPrefix = "/";
 const siteMetadata = {
-  title: "Obsidian Template for Gatsby Theme Primer Wiki",
+  title: "Everything I Know by Owen",
   shortName: "Wiki",
   description:
-    "Another Obsidian template that use gatsby-theme-primer-wiki, Welcome to your new Obsidian Knowledge Base!",
+    "Personal wiki, share everything I learned, and spend a lifetime updating it. I hope it'll be a good gift for my grandchildren.",
   twitterName: "theowenyoung",
   imageUrl: "/graph-visualisation.jpg",
-  siteUrl: "https://demo-obsidian.owenyoung.com",
+  siteUrl: "https://wiki.owenyoung.com",
 };
 module.exports = {
   siteMetadata,
@@ -27,18 +27,51 @@ module.exports = {
     {
       resolve: "gatsby-theme-primer-wiki",
       options: {
+        icon: "./static/logo.png",
+        sidebarComponents: ["latest", "tag"],
+        defaultIndexLatestPostCount: 15,
+        searchBody: true,
         nav: [
           {
-            title: "Github",
-            url: "https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki/",
+            title: "Latest",
+            url: "/latest/",
           },
+
           {
             title: "Twitter",
             url: "https://twitter.com/theowenyoung",
           },
+          {
+            title: "Blog",
+            url: "https://www.owenyoung.com/",
+          },
+          {
+            title: "About",
+            items: [
+              {
+                title: "Newsletter",
+                url: "https://digests.owenyoung.com/",
+              },
+              {
+                title: "Now",
+                url: "https://www.owenyoung.com/now/",
+              },
+              {
+                title: "About",
+                url: "https://www.owenyoung.com/about/",
+              },
+              {
+                title: "Github",
+                url: "https://github.com/theowenyoung",
+              },
+              {
+                title: "Source Code",
+                url: "https://github.com/theowenyoung/wiki",
+              },
+            ],
+          },
         ],
-        editUrl:
-          "https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki/tree/main/",
+        editUrl: "https://github.com/theowenyoung/wiki/tree/main/",
       },
     },
     {
@@ -67,7 +100,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [],
+        trackingIds: ["G-76F1LR70FY"],
       },
     },
   ],

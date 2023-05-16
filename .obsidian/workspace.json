@@ -11,8 +11,12 @@
             "id": "b586ecf7e880bc62",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,14 +123,14 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "326e8dfe7a493f59",
+  "active": "b586ecf7e880bc62",
   "lastOpenFiles": [
+    "Start here.md",
     "Web Build Database.md",
     "Web Build Database 2.md",
     "Anotehr one.md",
     "prioritization.md",
     "README.md",
-    "Start here.md",
     "Design principles.md",
     "Apps/Baserow.md",
     "Apps",
